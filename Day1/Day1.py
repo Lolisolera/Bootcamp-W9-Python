@@ -56,7 +56,7 @@
 # convert your name , interests and city variables to become dynamic
 #dynamic values  = values defined byt he user, so this can vary each time
 
-
+"""
 # Input for name, interests, and city
 name = input("Enter your name: ")
 interests = input("Enter your interests: ")
@@ -66,3 +66,76 @@ city = input("Enter your city: ")
 print("Name:", "name")
 print("Interests:", "interests")
 print("City:", "city ")
+"""
+
+""""
+# write a list using python
+
+list1 = [1,5, 9.9, 5, "list", False]
+list2 = [1,2,3,4,5,10,20]
+print("\nThis is a list")
+print(type(list1))
+print(list1)
+print(type(list2))
+print(list2)
+
+# Creating a list of fruits
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+
+print(fruits)
+
+
+print("The first fruit is:", fruits[0])  
+"""
+
+"""
+# A sequnece is similat to a list but it can't be modified. But are quicket to make
+
+# write a sequnce:
+
+sequence = list(range(1, 11))
+
+print(sequence)
+
+"""
+
+# SET doesn't give us duplicated data. Inside curly braces
+
+# Diccionary stores data ans key value pairs, ike OBJECTS
+# we can use numbers as text to name our objects.
+
+# e.g. dictionary1={1:John}
+
+# Build a dictionary and access the data via your dictionary:
+
+dictionary1={1:"John", 2:"Anna", 3:"Peter"}
+dictionary2={"age":23, "homeOwner":True}
+
+print("\nThis is a Dictionary")
+print(type(dictionary1))
+print (dictionary1)
+
+print("printing values from lsit, tuples & dictionaries")
+print("Dictionary:")
+print(dictionary1[2])
+print(dictionary2["homeOwner"])
+print("List:")
+print(list1[2])
+print("Tuple:")
+
+
+
+
+# # convert to string
+str()
+# # convert to integer
+int()
+# # convert to float
+float()
+# # convert to boolean
+bool()
+
+
+
+
+
