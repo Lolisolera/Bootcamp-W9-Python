@@ -120,7 +120,7 @@ print("Dictionary:")
 print(dictionary1[2])
 print(dictionary2["homeOwner"])
 print("List:")
-print(list1[2])
+print("list1"[2])
 print("Tuple:")
 
 
