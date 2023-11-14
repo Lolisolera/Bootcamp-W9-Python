@@ -56,10 +56,44 @@ print(list4) #[34.7, 2, 1, -8]
 list4.clear() # clear/ remove all list items
 print(list4)
 
-# ~list exercise
+
+
+
+# list exercises  ------------ 
 # create a list of 6 items
+
+
+colors = ["red", "blue", "green", "yellow", "orange", "purple"]
+
+print(colors)
+
 # insert a new item in postion 3
+
+new_color = "pink"
+colors.insert(2, "pink")  
+print(colors)
+
+
 # add another item to the list
+
+colors.append("lilac")
+
+print(colors)
+
+
 # remove an item by value
+
+colors.remove("green")
+print(colors)
+
 # remove the item at index position 3
+
+del colors[3]
+
+# The above code uses "del" to remove the item at index 3 
+# (which corresponds to the fourth item in the list since indexing starts from 0)
+
+print(colors)
+
+
 # for every list manipulation print the list
