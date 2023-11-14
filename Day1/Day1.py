@@ -6,7 +6,7 @@
 # Your name
 #print("My name is Lola")
 # Your address
-##print("My address is Old Farm Road, London ")
+#print("My address is Old Farm Road, London ")
 # Your interest(s)
 #print("I like music and making movies ")
 # Perform either addition or calculation with two numbers
@@ -46,7 +46,7 @@
 # Use a variable and invoke/call the input function to ask the user for a second number
 
 # add the two numbers
-##total = num1 + num2
+#total = num1 + num2
 
 # print out the total of the two numbers
 #print(f"the total sum of {num1} + {num2} = {total}")
@@ -89,7 +89,7 @@ print("The first fruit is:", fruits[0])
 """
 
 """
-# A sequnece is similat to a list but it can't be modified. But are quicket to make
+# A sequence is similar to a list but it can't be modified. But are quicker to make
 
 # write a sequnce:
 
@@ -101,7 +101,7 @@ print(sequence)
 
 # SET doesn't give us duplicated data. Inside curly braces
 
-# Diccionary stores data ans key value pairs, ike OBJECTS
+# Diccionary stores data ans key value pairs, like OBJECTS
 # we can use numbers as text to name our objects.
 
 # e.g. dictionary1={1:John}
