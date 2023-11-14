@@ -95,5 +95,4 @@ del colors[3]
 
 print(colors)
 
-
 # for every list manipulation print the list
