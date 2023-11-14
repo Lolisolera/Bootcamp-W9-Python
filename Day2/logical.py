@@ -30,9 +30,14 @@ print(num1 != 10 and num1 < 10)
 # When num1 = 10, num2 = 5
 print(num1 == 10 and num2 ==5)
 
+
 # When num1 = 10, num2 = 50
+print(num1 == 10 and num2 ==50)
 
 # When num1 = 15, num2 = 5
+
+print(num1 == 15 and num2 ==5)
+
 
 
 # Logical Operators: or
@@ -41,8 +46,10 @@ print(num1 != 10 or num1 < 10)
 # When num1 = 10, num2 = 5
 print(num1 == 10 or num2 == 5)
 # When num1 = 10, num2 = 50
-
+print(num1 == 10 or num2 == 50)
 # When num1 = 15, num2 = 5
+print(num1 == 15 or num2 == 5)
+
 
 
 # Logical Operators: not
@@ -58,10 +65,11 @@ print(not (num1 == 10))  # num1 is not equal to 10
 # When num1 is not = 10, num2 is not = 5
 print(not(num1 != 10 and num2 != 5))
 # When num1 is not = 10, num2 is not = 50
-
+print(not(num1 != 10 and num2 != 50))
 # When num1 is not = 15, num2 is not = 5
-
+print(not(num1 != 15 and num2 != 5))
 # When num1 is not = 1, num2 is not = 50
+print(not(num1 != 1 and num2 != 50))
 
 
 # Logical Operators: or with not
@@ -70,8 +78,10 @@ print("Logical Operators: or with not")
 print(not(num1 != 10 or num2 != 5))
 
 # When num1 is not = 10,  or num2 is not = 50
-
+print(not(num1 != 10 or num2 != 50))
 # When num1 is not = 1,  or num2 is not = 50
+print(not(num1 != 1 or num2 != 50))
 
 #print(num1 == 10 and (num1 > 8 or (num1 % 2 == 0 and num1 // 3 == 3)))
 
+num1 == 10 and (num1 > 8 or (num1 % 2 == 0 and num1 // 3 == 3))
