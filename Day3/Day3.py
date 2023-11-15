@@ -1,5 +1,5 @@
-#FOR LOOPS:
-
+#FOR LOOPS APPS AND GAMES:
+"""
 # using start, stop, step, create a count-down program:
 
 import time
@@ -45,7 +45,7 @@ for i in range(1, 11): #Use range to define the range of values for i in the loo
     answer = int(input(f" What is {i} x {num}? "))
     print(f"the answer is {answer} ")
 
-      # Fix: Calculate the correct answer inside the loop
+      # Calculate the correct answer inside the loop
        
     correct = i * num
 
@@ -53,10 +53,57 @@ for i in range(1, 11): #Use range to define the range of values for i in the loo
         print("Correct")
     else:
         print(f"No, the answer is {correct}")
+
+
+print("Finished")
   
-
-
+"""
 #--------------------------------
 
 
+# TASK 3
+#Complete the code below to display multiplication table of your choice
+num1 =int(input("Enter number for multiplication: "))
+#'block of code is missing here"
+"""
+1 x 5 = 5
+2 x 5 = 
+3 x 5 = 
+4 x 5 = 
+5 x 5 = 
+6 x 5 = 
+7 x 5 = 
+8 x 5 = 
+9 x 5 = 
+
+""" 
+
+
+# SOLUTION TASK 3:
+num1 = int(input("Enter number for multiplication: "))
+
+# Display multiplication table for num1
+for i in range(1, 13):
+    result = i * num1
+    print(f"{i} x {num1} = {result}")
+
+
+#----------------------------------------------
+
+#Extension Task:
+#Build a program that iterates through a word given by the user 
+# and returns whether each letter is a consonant or a vowel.
+
+
+word = input("Enter a word: ").lower()
+
+# Iterate through each letter in the word
+for letter in word:
+    # Check if the letter is a vowel
+    if letter in 'aeiou':
+        print(f"{letter} is a vowel.")
+    else:
+        print(f"{letter} is a consonant.")
+
+print("Finished")
 
