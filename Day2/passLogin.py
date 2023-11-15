@@ -1,3 +1,7 @@
+
+""""
+
+
 if request.method == "POST":
     # CHECK IF USERNAME ALREADY EXSISTS IN DB
     existing_user = mongo.db.users.find_one(
@@ -17,3 +21,6 @@ if request.method == "POST":
         # USERNAME DOESN'T EXIST
         flash("Incorrect Username and/or Password")
         return redirect(url_for("login"))
+
+        
+        """ 
