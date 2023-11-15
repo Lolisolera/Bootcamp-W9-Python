@@ -1,3 +1,9 @@
+# randint is a function from the random module in Python. It stands for "random integer."
+# randint function generates a random integer between 1 and 6 (inclusive)
+# with randint we don't need to use Math.floor!
+
+
+#diceRoll game
 from random import randint
 
 dice1 = randint(1, 6)
