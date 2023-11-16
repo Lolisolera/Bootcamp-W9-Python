@@ -124,3 +124,48 @@ def print_user_info():
 
 # Call the function to print user information
 print_user_info()
+
+
+
+# ------------
+# TIM's solution
+def get_user_info(fullName, address, interests):
+    para = f"my name is{fullName}, my address is {address} and my interests are {interests}"
+    return para
+
+sentence = userName4("Bob", "Kingston", "Reggae")
+print(sentence)
+
+
+#-------------------
+
+def addition(pNum1, pNum2, *args):
+
+    answer = pNum1 + pNum2
+
+    print(args)
+
+    for value in args:
+        print(value)
+
+        return args
+    
+
+#num1 = int(input("Enter first number: "))
+#num2 = int(input("Enter first second: "))
+
+
+# 3 fields are optional
+
+if len(args) ==1:
+    print(args[0])
+
+#print(additional(num1, num2))
+
+print(addition1(4, 5, "Name", "Fruit", "Drink", "4", "7.5", "True"))
+
+
+"MOdify the code above to use args(arguments)"
+
+
+
