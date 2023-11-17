@@ -1,5 +1,5 @@
 # SUBROUTINE
-
+"""
 def userName():
     name = "Fredddy"
     print(name)
@@ -83,15 +83,16 @@ addition()
 
 
 #----------------------------
+
 #Exercise: Modify the code below to use parameters(arguments)
 #Define a subroutine called username
-"""
+
 def username():
     first_name = "Firstname"
     last_name = "last name"
     interests = "interests"
 print(f"Your first name is: {first_name}\nYour last name is: {last_name}\nYour interests include: {interests}")
-"""
+
 
 #Solution:
 
@@ -167,5 +168,51 @@ print(addition1(4, 5, "Name", "Fruit", "Drink", "4", "7.5", "True"))
 
 "MOdify the code above to use args(arguments)"
 
+"""
 
 
+# PYTHON GAMES/APPS
+
+#1. Create a Fibonacci App using Python:
+
+def fibonacci(n):
+    fibSequence = [0, 1]
+
+    for i in range(2, n):
+        nextNum = fibSequence[-1] + fibSequence[-2]
+        fibSequence.append(nextNum)
+
+    return fibSequence[:n]
+
+# Get user input for the number of Fibonacci numbers to generate
+numTerms = int(input("Enter the number of Fibonacci numbers to generate: "))
+
+# Generate and print the Fibonacci sequence
+result = fibonacci(numTerms)
+print("Fibonacci Sequence:", result)
+
+
+
+
+# 2.ASK THE USER FOR A NUMBER AND CHECK WHETER THE NUMBER IS PRIME OR NOT:
+
+def isPrime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+# Get user input
+userInput = input("Enter a number: ")
+
+# Check if the input is a valid integer
+try:
+    userNumber = int(userInput)
+    if isPrime(userNumber):
+        print(f"{userNumber} is a prime number.")
+    else:
+        print(f"{userNumber} is not a prime number.")
+except ValueError:
+    print("Please enter a valid integer.")
