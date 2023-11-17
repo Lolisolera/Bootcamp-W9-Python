@@ -232,7 +232,7 @@ def get_player_choice(playerNumber):
 
 def determine_winner(player1, player2):
     if player1 == player2:
-        return "It's a tie!"
+        return "Draw!"
     elif (player1 == "Rock" and player2 == "Scissors") or (player1 == "Paper" and player2 == "Rock") or (player1 == "Scissors" and player2 == "Paper"):
         return "Player 1 wins!"
     else:
@@ -256,3 +256,6 @@ while True:
     if play_again != "yes":
         print("Thanks for playing. Goodbye!")
         break
+
+
+
