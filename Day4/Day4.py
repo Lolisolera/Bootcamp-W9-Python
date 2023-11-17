@@ -216,3 +216,43 @@ try:
         print(f"{userNumber} is not a prime number.")
 except ValueError:
     print("Please enter a valid integer.")
+
+
+#Make a two-player Rock-Paper-Scissors game. 
+#(Hint: Ask for player to play (using input), compare them, print out a message of congratulations to the winner,
+# and ask if the players want to start a new game)
+
+def get_player_choice(playerNumber):
+    while True:
+        choice = input(f"Player {playerNumber}, enter your choice (Rock, Paper, or Scissors): ").capitalize()
+        if choice in ["Rock", "Paper", "Scissors"]:
+            return choice
+        else:
+            print("Invalid choice. Please enter Rock, Paper, or Scissors.")
+
+def determine_winner(player1, player2):
+    if player1 == player2:
+        return "It's a tie!"
+    elif (player1 == "Rock" and player2 == "Scissors") or (player1 == "Paper" and player2 == "Rock") or (player1 == "Scissors" and player2 == "Paper"):
+        return "Player 1 wins!"
+    else:
+        return "Player 2 wins!"
+
+def playGame():
+    player1_choice = get_player_choice(1)
+    player2_choice = get_player_choice(2)
+
+    print(f"Player 1 chose {player1_choice}")
+    print(f"Player 2 chose {player2_choice}")
+
+    winner_message = determine_winner(player1_choice, player2_choice)
+    print(winner_message)
+
+# Main game loop
+while True:
+    playGame()
+
+    play_again = input("Do you want to play again? (yes/no): ").lower()
+    if play_again != "yes":
+        print("Thanks for playing. Goodbye!")
+        break
