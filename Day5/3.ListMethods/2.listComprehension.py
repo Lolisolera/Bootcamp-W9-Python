@@ -84,10 +84,76 @@ for nums in aList:
 
 # Exercise: sort and print the items in the commons variable in ascending and descending order
 # commonNums
+
+# Original list
+original_list = [20, 31, 4, 9, 101]
+
+# Sort in ascending order
+ascending_order = sorted(original_list)
+print("Ascending Order:", ascending_order)
+
+# Sort in descending order
+descending_order = sorted(original_list, reverse=True)
+print("Descending Order:", descending_order)
+
+
 # Exercise:  create two lists with at least two/three common names in both lists
+
+# Creating two lists with common names
+list1 = ["Alice", "Bob", "Charlie", "David"]
+list2 = ["Charlie", "Eva", "Bob", "Grace"]
+
+# Displaying the lists
+print("List 1:", list1)
+print("List 2:", list2)
+
+
 # find the common names from both lists and put them in a commonNames List
+
+# Finding common names using sets
+set1 = set(list1)
+set2 = set(list2)
+common_names_set = set1.intersection(set2)
+
+# Converting the set to a list
+common_names_list = list(common_names_set)
+
+# Displaying the common names list
+print("Common Names:", common_names_list)
+
+
 # use the input and then the if to search the common names list for a specific name
+
+# Converting the set to a list
+common_names_list = list(common_names_set)
+
+# Displaying the common names list
+print("Common Names:", common_names_list)
+
+# Getting a name from the user
+search_name = input("Enter a name to search: ")
+
+# Checking if the entered name is in the common names list
+if search_name in common_names_list:
+    print(f"{search_name} is a common name.")
+else:
+    print(f"{search_name} is not a common name.")
+
+
 # Exercise : Slice list aList from 0 - 5 and bList from 0 - 4 and put them together in a new list
+
+aList = [1, 2, 3, 4, 5]
+bList = [6, 7, 8, 9, 10]
+
+# Slicing lists
+slice_aList = aList[0:5] 
+slice_bList = bList[0:4] 
+
+# Concatenating sliced lists
+newList = slice_aList + slice_bList
+
+# Displaying the new list
+print("Combined List:", newList)
 
 
 # call a method on each element

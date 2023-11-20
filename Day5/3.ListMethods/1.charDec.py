@@ -24,10 +24,23 @@ print(secretMsg)
 """Exercise: Complete the code block below to print a list of converted numbers to letter as specified in the range, the 
 questions marks indicates where the code is missing"""
 # def alphabets(): # created the function alphabets
-#     alphabetList = ? # create an empty list
-#     for ? in range(65, 123):
-#         alphabetList.append(chr(letters))  # converts numbers to letters
-#     return ?
 
+def alphabets(start, end):
+    # Ensure the range is within valid ASCII values for uppercase and lowercase letters
+    start = max(start, 65)
+    end = min(end, 122)
 
-# print(?)
+    # Create an empty list to store the converted letters
+    alphabet_list = []
+
+    # Loop through the range and append the corresponding letters to the list
+    for num in range(start, end + 1):
+        alphabet_list.append(chr(num))
+
+    return alphabet_list
+
+# Call the function with the desired range
+result_list = alphabets(65, 75)
+
+# Print the resulting list
+print(result_list)
